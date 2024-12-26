@@ -1,0 +1,18 @@
+# ./.github/workflows/github-action-workflow-call.yml
+
+name: Workflows Names - called workflow
+run-name: Runs Names - called workflow 🚀
+
+on:
+  workflow_call:
+    inputs:
+      environment:
+        required: true
+        type: string
+
+jobs:
+  Jobs-Names-called_workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo enviroment
+        run: echo Setup for ${{ inputs.environment }}
