@@ -3,7 +3,7 @@
 name: Workflows Names - github-action-workflow_call-01
 run-name: Runs Names - github-action-workflow_call-01 🚀
 on: 
-  push
+  workflow_dispatch
 
 jobs:
   Jobs-Names-github-action-workflow_call-01:
